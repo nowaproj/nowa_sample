@@ -9,6 +9,32 @@
             "deps": [
                 "lib/pages/home_page.dart"
             ]
+        },
+        {
+            "x": 1988.0,
+            "y": 200.0,
+            "w": 393.0,
+            "h": 808.0,
+            "widget": "const ChatPage()",
+            "deps": [
+                "lib/chat_page.dart"
+            ]
+        },
+        {
+            "x": 2406.0,
+            "y": 200.0,
+            "w": 384.0,
+            "widget": "const Markdown('## Notes\\n- Connecting the message inside the circuit causes an expection\\n- Making the list reversed is difficult and requireds custom code (could also be done by inserting items instead of adding them)\\n- It would be nice if I can see the list view filled with sample data even if it comes from a local variable',)"
+        },
+        {
+            "x": 1246.0,
+            "y": 1297.0,
+            "w": 393.0,
+            "h": 808.0,
+            "widget": "const LocalStorage()",
+            "deps": [
+                "lib/local_storage.dart"
+            ]
         }
     ]
 }

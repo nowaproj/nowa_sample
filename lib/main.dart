@@ -1,8 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:nowa_runtime/nowa_runtime.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:nowa_sample/globals/app_state.dart';
+import 'package:nowa_sample/chat_page.dart';
+import 'package:nowa_sample/local_storage.dart';
 import 'package:nowa_sample/pages/home_page.dart';
 
 @NowaGenerated()
@@ -18,7 +20,7 @@ main() async {
 
 @NowaGenerated({'visibleInNowa': false})
 class MyApp extends StatelessWidget {
-  @NowaGenerated()
+  @NowaGenerated({'loader': 'auto-constructor'})
   const MyApp({super.key});
 
   @override
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         theme: AppState.of(context).theme,
         initialRoute: 'HomePage',
         routes: {
+          'ChatPage': (context) => const ChatPage(),
+          'LocalStorage': (context) => const LocalStorage(),
           'HomePage': (context) => const HomePage(),
         },
       ),

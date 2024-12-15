@@ -1,18 +1,12 @@
 name: nowa_sample
-description: "A new Nowa project."
-publish_to: 'none'
-
+description: A new Nowa project.
+publish_to: none
 version: 1.0.0+1
-
 environment:
-  sdk: '>=3.2.0 <4.0.0'
-
+  sdk: ">=3.2.0 <4.0.0"
 dependencies:
   flutter:
     sdk: flutter
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   nowa_runtime: ^0.0.38
   flutter_html: ^3.0.0-beta.2
@@ -20,14 +14,11 @@ dependencies:
   provider: ^6.1.1
   shared_preferences: ^2.2.3
   dio: ^5.5.0+1
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.0
-
-
-# The following section is specific to Flutter packages.
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
