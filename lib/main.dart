@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:nowa_sample/globals/app_state.dart';
 import 'package:nowa_sample/chat_page.dart';
+import 'package:nowa_sample/counter.dart';
 import 'package:nowa_sample/local_storage.dart';
+import 'package:nowa_sample/navigation_sample.dart';
 import 'package:nowa_sample/pages/home_page.dart';
 
 @NowaGenerated()
@@ -32,7 +34,9 @@ class MyApp extends StatelessWidget {
         initialRoute: 'HomePage',
         routes: {
           'ChatPage': (context) => const ChatPage(),
+          'Counter': (context) => const Counter(),
           'LocalStorage': (context) => const LocalStorage(),
+          'NavigationSample': (context) => const NavigationSample(),
           'HomePage': (context) => const HomePage(),
         },
       ),

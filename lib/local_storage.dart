@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:nowa_sample/main.dart';
 
-@NowaGenerated()
+@NowaGenerated({'auto-width': 393.0})
 class LocalStorage extends StatefulWidget {
   @NowaGenerated({'loader': 'auto-constructor'})
   const LocalStorage({super.key});
@@ -28,8 +28,6 @@ class _LocalStorageState extends State<LocalStorage> {
           alignment: const Alignment(0.0, 0.0),
           children: [
             Positioned(
-              top: 161.0,
-              left: 73.5,
               width: 246.0,
               height: 243.0,
               child: NFlex(
@@ -89,26 +87,10 @@ class _LocalStorageState extends State<LocalStorage> {
                   )
                 ],
               ),
-            ),
-            Positioned(
-              top: 505.0,
-              left: 81.0,
-              width: 231.0,
-              height: 127.0,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: Theme.of(context)
-                        .colorScheme
-                        .primary
-                        .withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(0.0)),
-              ),
             )
           ],
         ),
       ),
     );
   }
-
-  void func() {}
 }

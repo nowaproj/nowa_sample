@@ -20,7 +20,7 @@ class _ChatPageState extends State<ChatPage> {
   List<Message?>? messages = [];
 
   void send() {
-    messages?.add(Message(message: text.text));
+    messages?.add(Message(message: text.text, timestamp: DateTime.now()));
     text.clear();
     setState(() {});
   }
@@ -117,6 +117,12 @@ class _ChatPageState extends State<ChatPage> {
             )
           ],
         ),
+      ),
+      appBar: AppBar(
+        title: const Text(
+          'Title',
+        ),
+        actions: [],
       ),
     );
   }
