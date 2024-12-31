@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:nowa_sample/main.dart';
 
+int get myGetter {
+  return 1;
+}
+
 @NowaGenerated({'auto-width': 393.0})
 class LocalStorage extends StatefulWidget {
   @NowaGenerated({'loader': 'auto-constructor'})

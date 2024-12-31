@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:nowa_sample/chat_page.dart';
 import 'package:nowa_sample/local_storage.dart';
+import 'package:nowa_sample/audio_player.dart';
 
-@NowaGenerated()
+@NowaGenerated({'auto-width': 698.0})
 class HomePage extends StatelessWidget {
   @NowaGenerated({'loader': 'auto-constructor'})
   const HomePage({super.key});
@@ -111,6 +112,13 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            const Positioned(
+              left: 20.5,
+              height: 190.0,
+              bottom: 58.0,
+              right: 20.5,
+              child: AudioPlayer(),
             )
           ],
         ),

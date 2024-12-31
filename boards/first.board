@@ -75,6 +75,26 @@
             "deps": [
                 "lib/counter.dart"
             ]
+        },
+        {
+            "x": 2644.0,
+            "y": 1208.0,
+            "w": 393.0,
+            "h": 808.0,
+            "widget": "const PageViewExample()",
+            "deps": [
+                "lib/page_view_example.dart"
+            ]
+        },
+        {
+            "x": 3199.0,
+            "y": 1208.0,
+            "w": 393.0,
+            "h": 808.0,
+            "widget": "const FormsSample()",
+            "deps": [
+                "lib/forms_sample.dart"
+            ]
         }
     ]
 }
