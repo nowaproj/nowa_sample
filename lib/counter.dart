@@ -46,7 +46,7 @@ class _CounterState extends State<Counter> {
                   ),
                   FlexSizedBox(
                     child: Text(
-                      counter! > 10 ? 'Big' : 'Small',
+                      counter! > 10 ? 'Big' : 'Small 1',
                     ),
                   )
                 ],
