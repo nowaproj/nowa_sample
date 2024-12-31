@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Home Page',
+          'Home Page 1',
         ),
       ),
       body: SafeArea(
