@@ -11,8 +11,8 @@
             ]
         },
         {
-            "x": 1733.0,
-            "y": 203.0,
+            "x": 1710.0,
+            "y": 72.0,
             "w": 393.0,
             "h": 808.0,
             "widget": "const ChatPage()",
@@ -21,14 +21,14 @@
             ]
         },
         {
-            "x": 2151.0,
-            "y": 203.0,
+            "x": 2216.0,
+            "y": 116.5,
             "w": 384.0,
             "widget": "const Markdown('## Notes\\n- Connecting the message inside the circuit causes an expection\\n- Making the list reversed is difficult and requireds custom code (could also be done by inserting items instead of adding them)\\n- It would be nice if I can see the list view filled with sample data even if it comes from a local variable',)"
         },
         {
-            "x": 519.0,
-            "y": 1276.0,
+            "x": 552.0,
+            "y": 1208.0,
             "w": 393.0,
             "h": 808.0,
             "widget": "const LocalStorage()",
@@ -37,8 +37,8 @@
             ]
         },
         {
-            "x": 1195.0,
-            "y": 1276.0,
+            "x": 1187.0,
+            "y": 1208.0,
             "w": 393.0,
             "h": 808.0,
             "widget": "const NavigationSample()",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "x": 2216.0,
+            "x": 2169.5,
             "y": 1350.0,
             "w": 347.0,
             "h": 524.0,
@@ -67,8 +67,8 @@
             ]
         },
         {
-            "x": -186.0,
-            "y": 1276.0,
+            "x": -181.0,
+            "y": 1208.0,
             "w": 393.0,
             "h": 808.0,
             "widget": "const Counter()",
@@ -95,6 +95,16 @@
             "deps": [
                 "lib/forms_sample.dart"
             ]
+        },
+        {
+            "x": 277.0,
+            "y": 208.0,
+            "widget": "const Text('- List with filteration\\n- Chat\\n- Charts\\n- Auth\\n- Forms',)"
+        },
+        {
+            "x": 277.0,
+            "y": -409.0,
+            "widget": "Text('Version 1',style:Theme.of(context).textTheme.displayLarge,)"
         }
     ]
 }
