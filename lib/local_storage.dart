@@ -93,13 +93,13 @@ class _LocalStorageState extends State<LocalStorage> {
               ),
             ),
             Positioned(
-              top: 37.0,
+              top: 562.0,
               left: 32.0,
               width: 329.0,
               height: 202.0,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color(0xffc4c4c4),
+                    color: const Color(0xffc4c4c4),
                     borderRadius: BorderRadius.circular(0.0)),
               ),
             )
