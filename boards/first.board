@@ -105,6 +105,11 @@
             "x": 277.0,
             "y": -409.0,
             "widget": "Text('Version 1',style:Theme.of(context).textTheme.displayLarge,)"
+        },
+        {
+            "x": 41.0,
+            "y": 383.0,
+            "widget": "const Text('Plan: \\nFilteration is needed and asked by people\\nand also needs to be connected to some sort of backend',)"
         }
     ]
 }
