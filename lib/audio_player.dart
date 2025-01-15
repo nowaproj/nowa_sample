@@ -23,12 +23,6 @@ class _AudioPlayerState extends State<AudioPlayer> {
   CrossFadeState? fadeSate = CrossFadeState.showFirst;
 
   @override
-  void dispose() {
-    super.dispose();
-    apc?.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return NFlex(
       direction: Axis.vertical,
@@ -49,7 +43,7 @@ class _AudioPlayerState extends State<AudioPlayer> {
               activeColor: const Color(0xff20262e),
               min: 0.0,
               value: apc!.position.inSeconds.toDouble(),
-              max: apc?.duration.inSeconds.toDouble(),
+              max: apc!.duration.inSeconds.toDouble(),
             ),
             notifier: apc,
           ),
@@ -192,5 +186,11 @@ class _AudioPlayerState extends State<AudioPlayer> {
         )
       ],
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    apc?.dispose();
   }
 }

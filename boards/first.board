@@ -11,13 +11,13 @@
             ]
         },
         {
-            "x": 1710.0,
+            "x": 1475.0,
             "y": 72.0,
-            "w": 393.0,
+            "w": 397.0,
             "h": 808.0,
             "widget": "const ChatPage()",
             "deps": [
-                "lib/chat_page.dart"
+                "lib/chat_sample/chat_page.dart"
             ]
         },
         {
@@ -43,7 +43,7 @@
             "h": 808.0,
             "widget": "const NavigationSample()",
             "deps": [
-                "lib/navigation_sample.dart"
+                "lib/navigation_sample/navigation_sample.dart"
             ]
         },
         {
@@ -53,7 +53,7 @@
             "h": 524.0,
             "widget": "const NavPage1()",
             "deps": [
-                "lib/nav_page1.dart"
+                "lib/navigation_sample/nav_page1.dart"
             ]
         },
         {
@@ -63,7 +63,7 @@
             "h": 524.0,
             "widget": "const NavPage2()",
             "deps": [
-                "lib/nav_page2.dart"
+                "lib/navigation_sample/nav_page2.dart"
             ]
         },
         {
@@ -102,14 +102,33 @@
             "widget": "const Text('- List with filteration\\n- Chat\\n- Charts\\n- Auth\\n- Forms',)"
         },
         {
-            "x": 277.0,
-            "y": -409.0,
-            "widget": "Text('Version 1',style:Theme.of(context).textTheme.displayLarge,)"
+            "x": 279.0,
+            "y": -410.0,
+            "widget": "const Text('Version 2',style:TextStyle(fontSize:200.0),)"
         },
         {
-            "x": 41.0,
-            "y": 383.0,
-            "widget": "const Text('Plan: \\nFilteration is needed and asked by people\\nand also needs to be connected to some sort of backend',)"
+            "x": 227.0,
+            "y": 398.0,
+            "widget": "const Text('Plan: \\nTimeline and when to release',)"
+        },
+        {
+            "x": 2194.0,
+            "y": 527.0,
+            "w": 332.0,
+            "widget": "const ChatBubble()",
+            "deps": [
+                "lib/chat_sample/chat_bubble.dart"
+            ]
+        },
+        {
+            "x": -809.0,
+            "y": 208.0,
+            "w": 352.0,
+            "h": 190.0,
+            "widget": "const AudioPlayer()",
+            "deps": [
+                "lib/audio_player.dart"
+            ]
         }
     ]
 }

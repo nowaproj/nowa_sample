@@ -3,7 +3,7 @@ import 'package:nowa_runtime/nowa_runtime.dart';
 
 @NowaGenerated()
 final ThemeData lightTheme = ThemeData(
-  colorScheme: const ColorScheme.light(),
+  colorScheme: const ColorScheme.light(surface: Color(0xffffffff)),
   textTheme: const TextTheme(),
   inputDecorationTheme: InputDecorationTheme(
     filled: true,

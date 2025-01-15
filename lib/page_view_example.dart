@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
-import 'package:youtube_player_iframe_plus/youtube_player_iframe_plus.dart';
 
 @NowaGenerated()
 class PageViewExample extends StatefulWidget {
@@ -63,18 +62,6 @@ class _PageViewExampleState extends State<PageViewExample> {
                 child: const Text(
                   'Next',
                 ),
-              ),
-            ),
-            Positioned(
-              top: 160.0,
-              left: 17.0,
-              width: 359.0,
-              height: 246.0,
-              child: YoutubePlayerIFramePlus(
-                controller: YoutubePlayerController(
-                    initialVideoId: '9Q2MZes5lt8',
-                    params: const YoutubePlayerParams(
-                        autoPlay: false, enableCaption: true)),
               ),
             )
           ],

@@ -27,7 +27,7 @@ class NavPage2 extends StatelessWidget {
           height: 187.0,
           child: Container(
             decoration: BoxDecoration(
-                color: Color(0xffc4c4c4),
+                color: const Color(0xffc4c4c4),
                 borderRadius: BorderRadius.circular(0.0)),
           ),
         )

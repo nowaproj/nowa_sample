@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
-import 'package:nowa_sample/chat_page.dart';
+import 'package:nowa_sample/chat_sample/chat_page.dart';
 import 'package:nowa_sample/local_storage.dart';
 
 @NowaGenerated({'auto-width': 698.0})

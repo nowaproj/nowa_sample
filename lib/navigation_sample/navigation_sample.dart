@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
-import 'package:nowa_sample/nav_page1.dart';
-import 'package:nowa_sample/nav_page2.dart';
+import 'package:nowa_sample/navigation_sample/nav_page1.dart';
+import 'package:nowa_sample/navigation_sample/nav_page2.dart';
 
 @NowaGenerated()
 class NavigationSample extends StatefulWidget {
