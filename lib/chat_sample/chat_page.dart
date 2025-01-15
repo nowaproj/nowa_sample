@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nowa_sample/chat_sample/message.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:nowa_sample/chat_sample/chat_bubble.dart';
 import 'dart:typed_data';
@@ -20,6 +19,12 @@ class _ChatPageState extends State<ChatPage> {
   TextEditingController text = TextEditingController();
 
   List<Message?>? messages = [];
+
+  void send() {
+    messages?.add(Message(message: text.text, timestamp: DateTime.now()));
+    text.clear();
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +106,7 @@ class _ChatPageState extends State<ChatPage> {
                                 if (files.isNotEmpty) {
                                   final Uint8List? bytes =
                                       await files.first.readAsBytes();
-                                  messages?.add(Message(image: bytes));
+                                  messages?.add(Message(image: bytes!));
                                   setState(() {});
                                 }
                               },
@@ -145,11 +150,5 @@ class _ChatPageState extends State<ChatPage> {
         actions: [],
       ),
     );
-  }
-
-  void send() {
-    messages?.add(Message(message: text.text, timestamp: DateTime.now()));
-    text.clear();
-    setState(() {});
   }
 }

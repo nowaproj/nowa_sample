@@ -104,7 +104,7 @@
         {
             "x": 279.0,
             "y": -410.0,
-            "widget": "const Text('Version 2',style:TextStyle(fontSize:200.0),)"
+            "widget": "const Text('Version 3',style:TextStyle(fontSize:200.0),)"
         },
         {
             "x": 227.0,
