@@ -102,9 +102,9 @@
             "widget": "const Text('- List with filteration\\n- Chat\\n- Charts\\n- Auth\\n- Forms',)"
         },
         {
-            "x": 415.6337890625,
-            "y": -465.0,
-            "widget": "const Text('Version 5',style:TextStyle(fontSize:200.0),)"
+            "x": 304.5,
+            "y": -510.0,
+            "widget": "const Text('Version 6',style:TextStyle(fontSize:200.0),)"
         },
         {
             "x": 227.0,
