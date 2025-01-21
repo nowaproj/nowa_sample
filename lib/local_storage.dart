@@ -34,6 +34,8 @@ class _LocalStorageState extends State<LocalStorage> {
             Positioned(
               width: 246.0,
               height: 243.0,
+              left: 73.5,
+              top: 182.0,
               child: NFlex(
                 direction: Axis.vertical,
                 spacing: 48.0,

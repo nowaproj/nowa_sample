@@ -97,8 +97,8 @@
             ]
         },
         {
-            "x": 277.0,
-            "y": 208.0,
+            "x": 227.0,
+            "y": 154.0,
             "widget": "const Text('- List with filteration\\n- Chat\\n- Charts\\n- Auth\\n- Forms',)"
         },
         {
