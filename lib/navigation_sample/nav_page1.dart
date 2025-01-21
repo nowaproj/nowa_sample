@@ -23,8 +23,8 @@ class NavPage1 extends StatelessWidget {
           ),
         ),
         const FlexSizedBox(
-          width: 181.0,
-          height: 202.0,
+          width: 252.0,
+          height: 218.0,
           child: Image(
             image: NetworkImage(
                 'https://canary.contestimg.wish.com/api/webimage/5ddccb3c9a6f6e1cf8d7dd65-large.jpg?cache_buster=114b2b0b5893a0e736412075646fa5da'),
