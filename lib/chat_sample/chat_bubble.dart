@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:nowa_runtime/nowa_runtime.dart';
 import 'dart:typed_data';
 
+import 'package:nowa_sample/chat_sample/message.dart';
+
 @NowaGenerated({'auto-width': 332.0, 'auto-height': 36.0})
 class ChatBubble extends StatelessWidget {
   @NowaGenerated({'loader': 'auto-constructor'})
-  const ChatBubble({this.message = Message(), super.key});
+  const ChatBubble({this.message, super.key});
 
   final Message? message;
 
@@ -31,7 +33,7 @@ class ChatBubble extends StatelessWidget {
               width: double.infinity,
               height: null,
               child: Text(
-                message!.message,
+                message!.message ?? '[Message]',
               ),
             ),
             FlexSizedBox(
@@ -41,8 +43,7 @@ class ChatBubble extends StatelessWidget {
                 image: MemoryImage(message?.image ?? Uint8List(0)),
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) => Container(
-                  decoration: BoxDecoration(
-                      color: null, borderRadius: BorderRadius.circular(0.0)),
+                  decoration: BoxDecoration(color: null, borderRadius: BorderRadius.circular(0.0)),
                 ),
               ),
             )

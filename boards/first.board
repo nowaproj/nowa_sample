@@ -112,8 +112,8 @@
             "widget": "const Text('Plan: \\nTimeline and when to release',)"
         },
         {
-            "x": 2194.0,
-            "y": 527.0,
+            "x": 2242.0,
+            "y": 523.0,
             "w": 332.0,
             "widget": "const ChatBubble()",
             "deps": [

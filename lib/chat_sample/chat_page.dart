@@ -3,6 +3,8 @@ import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:nowa_sample/chat_sample/chat_bubble.dart';
 import 'dart:typed_data';
 
+import 'package:nowa_sample/chat_sample/message.dart';
+
 @NowaGenerated({'auto-width': 397.0})
 class ChatPage extends StatefulWidget {
   @NowaGenerated({'loader': 'auto-constructor'})
@@ -51,8 +53,7 @@ class _ChatPageState extends State<ChatPage> {
                     child: ListView.builder(
                       itemCount: messages?.length,
                       itemBuilder: (context, index) {
-                        final Message? element =
-                            messages?.reversed.toList()[index];
+                        final Message? element = messages?.reversed.toList()[index];
                         return Padding(
                           padding: const EdgeInsets.only(
                             left: 8.0,
@@ -104,8 +105,7 @@ class _ChatPageState extends State<ChatPage> {
                                   preferredCamera: CameraDevice.front,
                                 );
                                 if (files.isNotEmpty) {
-                                  final Uint8List? bytes =
-                                      await files.first.readAsBytes();
+                                  final Uint8List? bytes = await files.first.readAsBytes();
                                   messages?.add(Message(image: bytes!));
                                   setState(() {});
                                 }
