@@ -3,7 +3,6 @@ import 'package:nowa_runtime/nowa_runtime.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:nowa_sample/globals/app_state.dart';
-import 'package:nowa_sample/chat_sample/chat_page.dart';
 import 'package:nowa_sample/counter.dart';
 import 'package:nowa_sample/forms_sample.dart';
 import 'package:nowa_sample/local_storage.dart';
@@ -35,7 +34,6 @@ class MyApp extends StatelessWidget {
         theme: AppState.of(context).theme,
         initialRoute: 'HomePage',
         routes: {
-          'ChatPage': (context) => const ChatPage(),
           'Counter': (context) => const Counter(),
           'FormsSample': (context) => const FormsSample(),
           'LocalStorage': (context) => const LocalStorage(),
