@@ -20,15 +20,6 @@ class MessageModel {
 
   final bool? isMe;
 
-  @NowaGenerated({'loader': 'auto-to-json'})
-  Map<String, dynamic> toJson() {
-    return {
-      'msg': msg,
-      'time': time,
-      'isMe': isMe,
-    };
-  }
-
   @NowaGenerated({'loader': 'auto-copy-with'})
   MessageModel copyWith({String? msg, String? time, bool? isMe}) {
     return MessageModel(
@@ -36,5 +27,14 @@ class MessageModel {
       time: time ?? this.time,
       isMe: isMe ?? this.isMe,
     );
+  }
+
+  @NowaGenerated({'loader': 'auto-to-json'})
+  Map<String, dynamic> toJson() {
+    return {
+      'msg': msg,
+      'time': time,
+      'isMe': isMe,
+    };
   }
 }

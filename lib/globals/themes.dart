@@ -13,5 +13,4 @@ final ThemeData lightTheme = ThemeData(
 );
 
 @NowaGenerated()
-final ThemeData darkTheme = ThemeData(
-    colorScheme: const ColorScheme.dark(), textTheme: const TextTheme());
+final ThemeData darkTheme = ThemeData(colorScheme: const ColorScheme.dark(), textTheme: const TextTheme());

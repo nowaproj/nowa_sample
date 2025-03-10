@@ -6,9 +6,7 @@ import 'package:nowa_sample/chat_template/chat_bubble.dart';
 @NowaGenerated({'auto-width': 393.0, 'auto-height': 808.0})
 class ChatPage extends StatefulWidget {
   @NowaGenerated({'loader': 'auto-constructor'})
-  const ChatPage({this.wawww = const [], super.key});
-
-  final List<String?>? wawww;
+  const ChatPage({super.key});
 
   @override
   State<ChatPage> createState() {
@@ -29,9 +27,15 @@ class _ChatPageState extends State<ChatPage> {
     const MessageModel(msg: 'Good What about You ', time: '10:07')
   ];
 
-  @override
-  void initState() {
-    super.initState();
+  String? var1 = '';
+
+  String? var2 = '';
+
+  void send({String? param = ''}) {
+    fullChat
+        ?.add(MessageModel(msg: text.text, time: DateTime.now().format('jm')));
+    text.clear();
+    setState(() {});
   }
 
   @override
@@ -45,10 +49,12 @@ class _ChatPageState extends State<ChatPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             FlexSizedBox(
-              width: double.infinity,
+              width: 516.0,
               height: 72.0,
               child: Container(
-                decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface, borderRadius: BorderRadius.circular(0.0)),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(0.0)),
                 child: Padding(
                   padding: const EdgeInsets.only(
                     left: 10.0,
@@ -101,7 +107,8 @@ class _ChatPageState extends State<ChatPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: const Color(0x2b000000),
-                                        borderRadius: BorderRadius.circular(360.0),
+                                        borderRadius:
+                                            BorderRadius.circular(360.0),
                                         image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: NetworkImage(
@@ -115,15 +122,19 @@ class _ChatPageState extends State<ChatPage> {
                                       direction: Axis.vertical,
                                       spacing: 0.0,
                                       mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         FlexSizedBox(
                                           width: null,
                                           height: null,
                                           child: Text(
                                             'Name Surname',
-                                            style: Theme.of(context).textTheme.labelLarge,
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .labelLarge,
                                           ),
                                         ),
                                         FlexSizedBox(
@@ -131,7 +142,9 @@ class _ChatPageState extends State<ChatPage> {
                                           height: null,
                                           child: Text(
                                             'Online',
-                                            style: Theme.of(context).textTheme.labelSmall,
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .labelSmall,
                                           ),
                                         )
                                       ],
@@ -162,32 +175,40 @@ class _ChatPageState extends State<ChatPage> {
             FlexSizedBox(
               width: double.infinity,
               flex: 1,
-              child: ListView.separated(
-                itemCount: fullChat!.length,
-                itemBuilder: (context, index) {
-                  final MessageModel? element = fullChat?[fullChat!.length - index - 1];
-                  return ChatBubble(
-                    message: element,
-                  );
-                },
-                separatorBuilder: (context, index) => const SizedBox(
-                  height: 8.0,
-                  width: 20.0,
+              child: Container(
+                decoration: BoxDecoration(
+                    color: const Color(0xfff5f5f5),
+                    borderRadius: BorderRadius.circular(0.0)),
+                child: ListView.separated(
+                  itemCount: fullChat!.length,
+                  itemBuilder: (context, index) {
+                    final MessageModel? element =
+                        fullChat?[fullChat!.length - index - 1];
+                    return ChatBubble(
+                      message: element,
+                    );
+                  },
+                  separatorBuilder: (context, index) => const SizedBox(
+                    height: 8.0,
+                    width: 20.0,
+                  ),
+                  padding: const EdgeInsets.only(
+                    left: 16.0,
+                    right: 16.0,
+                    top: 16.0,
+                    bottom: 16.0,
+                  ),
+                  reverse: true,
                 ),
-                padding: const EdgeInsets.only(
-                  left: 16.0,
-                  right: 16.0,
-                  top: 16.0,
-                  bottom: 16.0,
-                ),
-                reverse: true,
               ),
             ),
             FlexSizedBox(
               width: double.infinity,
               height: 72.0,
               child: Container(
-                decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface, borderRadius: BorderRadius.circular(0.0)),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(0.0)),
                 child: Padding(
                   padding: const EdgeInsets.only(
                     left: 10.0,
@@ -209,14 +230,20 @@ class _ChatPageState extends State<ChatPage> {
                           decoration: InputDecoration(
                             labelText: null,
                             hintText: 'type something...',
-                            hintStyle: Theme.of(context).textTheme.labelMedium,
+                            hintStyle:
+                                const TextStyle(fontSize: 12.0, color: null),
                             filled: true,
                             fillColor: const Color(0x0c000000),
                             focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(360.0),
-                                borderSide: BorderSide(width: 1.0, color: Theme.of(context).colorScheme.primary)),
+                                borderSide: BorderSide(
+                                    width: 1.0,
+                                    color:
+                                        Theme.of(context).colorScheme.primary)),
                             enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(360.0), borderSide: const BorderSide(color: Color(0x00000000))),
+                                borderRadius: BorderRadius.circular(360.0),
+                                borderSide:
+                                    const BorderSide(color: Color(0x00000000))),
                           ),
                           style: Theme.of(context).textTheme.bodyMedium,
                           onEditingComplete: () {
@@ -241,6 +268,7 @@ class _ChatPageState extends State<ChatPage> {
                             fill: null,
                           ),
                           color: null,
+                          isSelected: false,
                         ),
                       )
                     ],
@@ -251,13 +279,7 @@ class _ChatPageState extends State<ChatPage> {
           ],
         ),
       ),
-      backgroundColor: const Color(0xfff5f5f5),
+      backgroundColor: const Color(0xffffffff),
     );
-  }
-
-  void send() {
-    fullChat?.add(MessageModel(msg: text.text, time: DateTime.now().format('jm')));
-    text.clear();
-    setState(() {});
   }
 }
